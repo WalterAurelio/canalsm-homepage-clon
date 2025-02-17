@@ -1,0 +1,210 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Ogg';
+  src: url('./assets/fonts/Ogg-Regular-BF646c18fc465e5.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('./assets/fonts/ApercuMonoProRegular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Apercu Regular';
+  src: url('./assets/fonts/ApercuRegular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  /* Fonts */
+  --font-ogg: 'Ogg', sans-serif;
+  --font-apercu-mono: 'Apercu Mono', sans-serif;
+  --font-apercu-regular: 'Apercu Regular', sans-serif;
+
+  /* Colours */
+  --color-lblue-custom: #5ea3ec;
+  --color-red-custom: #f64444;
+  --color-yellow-custom: #ffb400;
+}
+
+/* Customs */
+
+@media(min-width: 768px) {
+  .main-container {
+    width: calc(100% - 180px);
+  }
+}
+
+/* Logo */
+
+.animate-logo {
+  animation: spawn 1.6s normal;
+}
+
+@keyframes spawn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hero */
+
+.animate-hero-text {
+  animation: spawn 1s normal 1.6s forwards;
+}
+
+.animate-hero-image {
+  animation: spawn 1.2s normal forwards;
+}
+
+/* Navbar */
+
+.animate-yellow-bar {
+  animation: bar 0.8s normal;
+}
+
+.animate-yellow-text {
+  animation: text 0.8s normal forwards;
+}
+
+.animate-yellow-ch {
+  animation: ch 0.8s normal forwards;
+}
+
+.animate-red-bar {
+  animation: bar 1s normal;
+}
+
+.animate-red-text {
+  animation: text 1s normal forwards;
+}
+
+.animate-red-ch {
+  animation: ch 1s normal forwards;
+}
+
+.animate-blue-bar {
+  animation: bar 1.2s normal;
+}
+
+.animate-blue-text {
+  animation: text 1.2s normal forwards;
+}
+
+.animate-blue-ch {
+  animation: ch 1.2s normal forwards;
+}
+
+@keyframes bar {
+  0% {
+    margin-right: 1044px;
+  }
+
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@keyframes text {
+  0% {
+    left: -200%;
+    right: 200%;
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes ch {
+  0% {
+    left: -589px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 68px;
+    opacity: 1;
+  }
+}
+
+/* Details */
+
+.animate-details {
+  animation: spawn 1.2s normal forwards;
+}
+
+/* Animated borders */
+
+.animate-borders {
+  background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  animation: .4s infinite normal borders;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.animate-borders:hover {
+  animation-play-state: running;
+}
+
+@keyframes borders {
+  0% {
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+  }
+
+  100% {
+    background-position: 30px 0, -30px 100%, 0 -30px, 100% 30px;
+  }
+}
+
+/* Decor borders */
+
+.decor-borders {
+  background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0);
+  background-position: 0 0, 0 100%, 0 0, 100% 0;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+  animation: .4s infinite normal decor;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+@keyframes decor {
+  0% {
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+  }
+
+  100% {
+    background-position: 30px 0, 30px 100%, 0 -30px, 100% 30px;
+  }
+}
+
+@media(min-width: 768px) {
+  .animate-decor {
+    animation-play-state: running;
+  }
+
+  .animate-decor.reversed {
+    animation-direction: reverse;
+  }
+}
