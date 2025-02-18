@@ -10,6 +10,7 @@ import MarketAddress from './layout/MarketAddress';
 import Footer from './layout/Footer';
 import CanalStreetMarketIcon from './components/CanalStreetMarketIcon';
 import { useInView } from 'react-intersection-observer';
+import HamburgerNavbar from './components/HamburgerNavbar';
 
 const detailsArr: IDetails[] = [
   {
@@ -39,12 +40,13 @@ function App() {
   const { ref: detailsRef, inView: detailsInView } = useInView({
     triggerOnce: true,
     threshold: 0.2
-  })
+  });
 
   return (
     <div className='main-container'>
-      <div className='fixed top-7.5 left-7.5 z-1 md:left-15 md:top-15 animate-logo'>
+      <div className='fixed top-7.5 z-1 md:left-15 md:top-15 w-full px-7.5 flex justify-between items-center animate-logo'>
         <CanalStreetMarketIcon />
+        <HamburgerNavbar />
       </div>
       <Navbar />
       

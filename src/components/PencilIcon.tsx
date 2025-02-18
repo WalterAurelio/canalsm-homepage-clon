@@ -12,15 +12,15 @@ function PencilIcon() {
       <g
         id='R2'
         stroke='none'
-        stroke-width='1'
+        strokeWidth='1'
         fill='none'
-        fill-rule='evenodd'
+        fillRule='evenodd'
       >
         <g
           id='1440_HP_v2-1'
           transform='translate(-215.000000, -3348.000000)'
           fill='#000000'
-          fill-rule='nonzero'
+          fillRule='nonzero'
         >
           <g
             id='Group-4'

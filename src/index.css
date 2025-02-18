@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Ogg';
   src: url('./assets/fonts/Ogg-Regular-BF646c18fc465e5.ttf');
-  font-weight: normal;
+  font-weight: linear;
   font-style: normal;
 }
 
@@ -57,52 +57,91 @@
   }
 }
 
+@keyframes nav-fade {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+/* Navbar */
+
+.fade-out {
+  animation: nav-fade .2s linear;
+  animation-fill-mode: forwards;
+}
+
+.delay-food-h {
+  animation-delay: .1s;
+  animation-fill-mode: forwards;
+}
+
+.delay-retail-h {
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+}
+
+.delay-community-h {
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+
+.delay-bhalf-h {
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+}
+
 /* Hero */
 
 .animate-hero-text {
-  animation: spawn 1s normal 1.6s forwards;
+  animation: spawn 1s linear 1.6s forwards;
 }
 
 .animate-hero-image {
-  animation: spawn 1.2s normal forwards;
+  animation: spawn 1.2s linear forwards;
 }
 
 /* Navbar */
 
 .animate-yellow-bar {
-  animation: bar 0.8s normal;
+  animation: bar 0.8s linear;
 }
 
 .animate-yellow-text {
-  animation: text 0.8s normal forwards;
+  animation: text 0.8s linear forwards;
 }
 
 .animate-yellow-ch {
-  animation: ch 0.8s normal forwards;
+  animation: ch 0.8s linear forwards;
 }
 
 .animate-red-bar {
-  animation: bar 1s normal;
+  animation: bar 1s linear;
 }
 
 .animate-red-text {
-  animation: text 1s normal forwards;
+  animation: text 1s linear forwards;
 }
 
 .animate-red-ch {
-  animation: ch 1s normal forwards;
+  animation: ch 1s linear forwards;
 }
 
 .animate-blue-bar {
-  animation: bar 1.2s normal;
+  animation: bar 1.2s linear;
 }
 
 .animate-blue-text {
-  animation: text 1.2s normal forwards;
+  animation: text 1.2s linear forwards;
 }
 
 .animate-blue-ch {
-  animation: ch 1.2s normal forwards;
+  animation: ch 1.2s linear forwards;
 }
 
 @keyframes bar {
@@ -122,7 +161,7 @@
     opacity: 0;
   }
 
-  20% {
+  50% {
     opacity: 0;
   }
 
@@ -148,7 +187,7 @@
 /* Details */
 
 .animate-details {
-  animation: spawn 1.2s normal forwards;
+  animation: spawn 1.2s linear forwards;
 }
 
 /* Animated borders */
@@ -158,7 +197,7 @@
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
   background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
-  animation: .4s infinite normal borders;
+  animation: .4s infinite linear borders;
   animation-timing-function: linear;
   animation-play-state: paused;
 }
@@ -184,7 +223,7 @@
   background-position: 0 0, 0 100%, 0 0, 100% 0;
   background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
   background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
-  animation: .4s infinite normal decor;
+  animation: .8s infinite linear decor;
   animation-timing-function: linear;
   animation-play-state: paused;
 }

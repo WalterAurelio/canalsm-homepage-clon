@@ -12,9 +12,9 @@ function InstagramIcon() {
       <g
         id='R2'
         stroke='none'
-        stroke-width='1'
+        strokeWidth='1'
         fill='none'
-        fill-rule='evenodd'
+        fillRule='evenodd'
       >
         <g
           id='1440_HP_v2-1'
@@ -31,7 +31,7 @@ function InstagramIcon() {
               <rect
                 id='Rectangle'
                 stroke='#000000'
-                stroke-width='1.25'
+                strokeWidth='1.25'
                 x='0.625'
                 y='0.625'
                 width='23.75'
@@ -41,7 +41,7 @@ function InstagramIcon() {
               <circle
                 id='Oval'
                 stroke='#000000'
-                stroke-width='1.25'
+                strokeWidth='1.25'
                 cx='12.5'
                 cy='12.5'
                 r='6.5'
