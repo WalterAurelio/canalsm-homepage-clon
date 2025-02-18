@@ -11,15 +11,15 @@ function EmailIcon() {
       <g
         id='WH_newer'
         stroke='none'
-        stroke-width='1'
+        strokeWidth='1'
         fill='none'
-        fill-rule='evenodd'
+        fillRule='evenodd'
       >
         <g
           id='375_HP_map-footer'
           transform='translate(-171.000000, -5586.000000)'
           fill='#000000'
-          fill-rule='nonzero'
+          fillRule='nonzero'
         >
           <g
             id='email-cap'
