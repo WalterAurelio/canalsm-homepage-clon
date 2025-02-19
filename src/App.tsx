@@ -44,22 +44,22 @@ function App() {
 
   return (
     <div className='main-container'>
-      <div className='fixed top-7.5 z-1 md:left-15 md:top-15 w-full px-7.5 flex justify-between items-center animate-logo'>
+      <div className='fixed top-7.5 z-1 md:left-15 md:top-15 w-full px-7.5 flex justify-between items-center animate-logo md:px-0'>
         <CanalStreetMarketIcon />
         <HamburgerNavbar />
       </div>
       <Navbar />
       
       <section className='mb-52 md:mb-15'>
-        <h2 className='pt-75 pb-44 px-7.5 font-ogg text-4xl md:text-[75px] md:pt-[250px] md:px-15 md:pb-30 opacity-0 animate-hero-text z-1'>
-          Canal Street Market is a carefully curated retail market, food hall & community space open year-round at 265 Canal Street. Support Small Business this weekend!
+        <h2 className='pt-75 pb-44 px-7.5 font-ogg text-4xl md:text-[75px] md:pt-[250px] md:px-15 md:pb-30 opacity-0 animate-hero-text z-1 leading-11 md:leading-21.5 lg:pr-19.5 md:[word-spacing:8px]'>
+          Canal Street Market is a carefully curated retail market, food hall & community space open year-round at 265 Canal Street. <span className='animate-span'>Support Small Business</span> this weekend!
         </h2>
         <div className='overflow-x-clip'>
           <img ref={imgRef} src={garden_1} alt='garden_1' className={`scale-148 md:scale-100 opacity-0 ${ imgInView ? 'animate-hero-image' : '' }`} />
         </div>
       </section>
       <section className='px-7.5 md:px-15 lg:grid lg:grid-cols-3 lg:gap-x-15'>
-        <h2 className='font-ogg text-6xl mb-15 md:text-[113px] md:leading-40 lg:col-start-1 lg:col-end-4'>A New Kind of Market</h2>
+        <h2 className='font-ogg text-6xl mb-15 md:text-[113px] md:leading-40 lg:col-start-1 lg:col-end-3'>A New Kind of Market</h2>
         <div ref={detailsRef} className={`opacity-0 lg:col-start-1 lg:col-end-4 lg:grid lg:grid-cols-3 lg:gap-x-15 ${ detailsInView ? 'animate-details' : '' }`}>
           {
             detailsArr.map((obj, index) =>

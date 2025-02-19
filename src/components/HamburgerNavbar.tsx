@@ -12,8 +12,8 @@ function HamburgerNavbar() {
         onClick={() => setIsActive(!isActive)}
         className='z-1'
       >
-        <X size={44} color='#3f3f3f' strokeWidth={1} className={`absolute -top-6 transition-all ease-out duration-600 ${ isActive ? '-right-0.5 opacity-100' : 'right-7 opacity-0' }`} />
-        <Menu size={40} color='#3f3f3f' strokeWidth={1} className={`absolute -top-5.5 transition-all ease-out duration-600 ${ isActive ? '-right-7 opacity-0' : 'right-0 opacity-100' }`} />
+        <X size={44} color='#3f3f3f' strokeWidth={1} className={`absolute -top-6 transition-all ease-out duration-600 ${ isActive ? '-right-2 opacity-100' : 'right-5 opacity-0' }`} />
+        <Menu size={40} color='#3f3f3f' strokeWidth={1} className={`absolute -top-5.5 transition-all ease-out duration-600 ${ isActive ? '-right-8.5 opacity-0' : '-right-1.5 opacity-100' }`} />
       </div>
     
       <div className={`fixed left-0 right-0 top-0 h-screen overflow-y-scroll overscroll-contain -z-1 ${ isActive ? '' : 'fade-out' }`}>
@@ -55,4 +55,5 @@ function HamburgerNavbar() {
     </div>
   )
 }
-export default HamburgerNavbar
+
+export default HamburgerNavbar;

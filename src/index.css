@@ -69,7 +69,7 @@
   }
 }
 
-/* Navbar */
+/* Hamburger Navbar */
 
 .fade-out {
   animation: nav-fade .2s linear;
@@ -104,6 +104,26 @@
 
 .animate-hero-image {
   animation: spawn 1.2s linear forwards;
+}
+
+.animate-span {
+  background-image: repeating-linear-gradient(-45deg, #ffb400, #ffb400 1px, transparent 0, transparent 13px), repeating-linear-gradient(45deg, #ffb400, #ffb400 1px, transparent 0, transparent 11px);
+  padding-bottom: 10px;
+  background-position: 0 103%, 2px 103%;
+  background-size: 17px 10px;
+  background-repeat: repeat-x;
+  animation: .8s infinite normal underline-flow;
+  animation-timing-function: linear;
+}
+
+@keyframes underline-flow {
+  0% {
+    background-position-x: 0, 2px;
+  }
+
+  100% {
+    background-position-x: 17px, 19px;
+  }
 }
 
 /* Navbar */
@@ -246,4 +266,13 @@
   .animate-decor.reversed {
     animation-direction: reverse;
   }
+}
+
+/* Footer */
+
+.decor-y {
+  background-image: repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px), repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px);
+  background-position: 0 0, 0 100%;
+  background-size: 100% 12px, 100% 12px;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
 }
