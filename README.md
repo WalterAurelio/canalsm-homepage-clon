@@ -9,7 +9,7 @@ Clon responsivo de la landing page del sitio oficial de [Canal Street Market](ht
 ## Capturas
 
 ### Versión de escritorio
-![Desktop Screenshot](./screenshots/canalstreetmarketclone-desktop-screenshot.png)
+![Desktop Screenshot](./screenshots/canalstreetmarketclone-desktop-screenshot.jpg)
 
 ### Versión móvil
 ![Mobile Screenshot](./screenshots/canalstreetmarketclone-mobile-screenshot.jpg)
